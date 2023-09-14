@@ -6,23 +6,34 @@
     --spacing-xl: 100px;
     --border-radius-md: 8px;
     --border-radius-sm: 4px;
-    --container-width: 1200px;
 }
 
 body {
     background-color: #EDE6D3;
-    justify-content: center;
 }
 
 #navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: var(--spacing-xl);
     margin-top: var(--spacing-sm);
 }
 
 nav.nav-options {
     display: flex;
     gap: var(--spacing-sm);
+}
+
+.nav-hamburger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    nav.nav-options {
+        display: none;
+    }
+    
+    .nav-hamburger {
+        display: inline-block;
+    }
 }
