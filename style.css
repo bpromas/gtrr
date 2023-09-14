@@ -1,15 +1,19 @@
+@font-face { font-family: MolotGTRR; src: url('assets/fonts/Molot_GTRR.otf'); } 
+@font-face { font-family: OpenDyslexic; src: url('assets/fonts/OpenDyslexicAlta-Regular.otf');}
+
+/* variáveis */
 :root {
-    --spacing-xs: 5px;
+    --bg: #EDE6D3;
+    --black: #000000;
+    --red: #FF1800;
     --spacing-sm: 10px;
-    --spacing-md: 40px;
-    --spacing-lg: 80px;
-    --spacing-xl: 100px;
+    --spacing-md: 30px;
     --border-radius-md: 8px;
     --border-radius-sm: 4px;
 }
 
 body {
-    background-color: #EDE6D3;
+    background-color: var(--bg);
 }
 
 #navbar {
@@ -17,11 +21,38 @@ body {
     justify-content: space-around;
     align-items: center;
     margin-top: var(--spacing-sm);
+    font-family: OpenDyslexic;
 }
 
 nav.nav-options {
     display: flex;
-    gap: var(--spacing-sm);
+    gap: var(--spacing-md);
+}
+
+.nav-item {
+    display:inline-block;
+    color: var(--black);
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-item::before{
+    visibility: hidden;
+    display: block;
+    content: '';
+    border-bottom: 2px solid var(--black);
+    position: relative;
+    top: 1.2rem;
+    width: 50%;
+    z-index: -1;
+}
+
+.nav-item:hover::before {
+    visibility: visible;
+}
+
+.nav-item.active{
+    color: var(--red);
 }
 
 .nav-hamburger {
