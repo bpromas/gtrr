@@ -4,8 +4,10 @@
 /* variáveis */
 :root {
     --bg: #EDE6D3;
-    --black: #000000;
+    --black: #131313;
     --red: #FF1800;
+    --blush: #FF18006B;
+    --spacing-xs: 5px;
     --spacing-sm: 10px;
     --spacing-md: 30px;
     --border-radius-md: 8px;
@@ -18,41 +20,60 @@ body {
 
 #navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 90%;
     align-items: center;
-    margin-top: var(--spacing-sm);
+    margin: var(--spacing-md) auto;
     font-family: OpenDyslexic;
 }
 
 nav.nav-options {
     display: flex;
+    align-items: center;
     gap: var(--spacing-md);
 }
 
 .nav-item {
-    display:inline-block;
+    display: inline-block;
     color: var(--black);
-    text-decoration: none;
     text-align: center;
 }
 
-.nav-item::before{
+.nav-item::before, .subnav-item::before {
     visibility: hidden;
     display: block;
     content: '';
     border-bottom: 2px solid var(--black);
     position: relative;
-    top: 1.2rem;
+    top: 1.5rem;
     width: 50%;
     z-index: -1;
 }
-
-.nav-item:hover::before {
+.nav-item:hover::before, .subnav-item:hover::before {
     visibility: visible;
 }
 
-.nav-item.active{
+.nav-item.active {
     color: var(--red);
+}
+
+.subnav:hover {
+    color: var(--red);
+}
+
+.subnav-content {
+    color: var(--black);
+    display: none;
+    position: absolute;
+    padding: var(--spacing-sm);
+    margin-top: var(--spacing-xs);
+    /* border-bottom: 2px solid var(--black); */
+    border-left: 2px solid var(--black);
+}
+.subnav:hover .subnav-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
 }
 
 .nav-hamburger {
