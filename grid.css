@@ -1,104 +1,43 @@
 .main-grid {
      display: grid;
-     grid-template-columns: repeat(4, 1fr);
+     grid-template-columns: repeat(12, 1fr);
      grid-template-rows: auto;
      margin: 0 100px;
      grid-template-areas:
-          "nb nb nb nb"
-          ". img img ."
-          ". present present ."
-          ". lazy lazy ."
-          ". ajudar ajudar ."
-          ". obj obj .";
+          "nb nb nb nb nb nb nb nb nb nb nb nb"
+          ". img img img img img img img img img img ."
+          ". apre apre apre apre apre apre apre apre apre apre ."
+          ". lazy lazy lazy lazy lazy lazy lazy lazy lazy lazy ."
+          ". ajud ajud ajud ajud ajud ajud ajud ajud ajud ajud ."
+          ". obj obj obj obj obj obj obj obj obj obj ."
+          "ft ft ft ft ft ft ft ft ft ft ft ft";
      place-items: center;
 }
 
 #navbar {
      grid-area: nb;
-     /* background-color: green; */
 }
 
 .imagem {
      grid-area: img;
-     width: 100%;
-     /* background-color: brown; */
 }
 
-/* boas vindas ao site */
 .apresentacao {
-     grid-area: present;
-     /* background-color: #dfc474; */
+     grid-area: apre;
 }
-
-
-
-
 
 .sorry-for-preguica {
      grid-area: lazy;
-     /* background-color: #e12542; */
 }
 
-
-
-
-
-
-/* .apresentacao h1 {
-     text-align: center;
-     line-height: 150%;
-     letter-spacing: var(--spacing-xs);
-     font-size: var(--fontsize-h1);
-     font-family: var(--fontfamily);
-} */
-
-.apresentacao span {
-     background-color: var(--orange);
-}
-
-.apresentacao p {
-     line-height: 150%;
-     text-align: center;
-}
-
-/* boas vindas ao site - boas vindas ao site - boas vindas ao site */
-
-
-/* AJUDAR SITE */
 .ajudar {
-     grid-area: ajudar;
-     /* background-color: blueviolet; */
+     grid-area: ajud;
 }
 
-.ajudar p {
-     line-height: 150%;
-     text-align: center;
+.ajudar {
+     grid-area: ajud;
 }
 
-.ajudar p {
-     margin-bottom: 20px;
-     line-height: 150%;
-     text-align: left;
-}
-
-.line {
-     display: flex;
-     flex-flow: row nowrap;
-}
-
-/* AJUDAR SITE */
-
-
-
-/* objetivo */
 .objetivo {
      grid-area: obj;
-     /* background-color: cadetblue; */
 }
-
-.objetivo p {
-     text-align: right;
-     line-height: 150%;
-}
-
-/* objetivo */

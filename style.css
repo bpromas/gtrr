@@ -24,3 +24,41 @@ body {
     background-color: var(--bg);
     width: 100%;
 }
+
+/* CSS da navbar em navbar.css */
+
+.imagem img {
+    width: 100%; 
+    height: auto;
+}
+
+.apresentacao p {
+    line-height: 150%;
+    text-align: center;
+}
+
+
+.apresentacao span {
+    background-color: var(--orange);
+}
+
+.ajudar p {
+    line-height: 150%;
+    text-align: center;
+}
+
+.ajudar p {
+    margin-bottom: 20px;
+    line-height: 150%;
+    text-align: left;
+}
+
+.line {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.objetivo p {
+    text-align: right;
+    line-height: 150%;
+}
