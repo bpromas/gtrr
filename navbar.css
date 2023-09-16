@@ -21,6 +21,19 @@
 .nav-item.active, .hamburger-item.active {
     color: var(--red);
 }
+.nav-item.active::before {
+    position: relative;
+    content: ".";
+    color: var(--black) !important;
+    top: 0.8em;
+    left: 50%;
+}
+
+.sub-nav-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
 
 /* hover stuff */
 
@@ -38,18 +51,8 @@
     gap: var(--spacing-sm);
 }
 
-.nav-item::before, .sub-nav-item::before {
-    visibility: hidden;
-    display: block;
-    content: '';
-    border-bottom: 2px solid var(--black);
-    position: relative;
-    top: 1.5rem;
-    width: 50%;
-    z-index: -1;
-}
-.nav-item:hover::before, .sub-nav-item:hover::before {
-    visibility: visible;
+.nav-item:hover, .sub-nav-item:hover {
+    color: var(--red);
 }
 
 .sub-nav:hover {
