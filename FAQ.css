@@ -1,0 +1,25 @@
+.toggle-content {
+     background-color: var(--black);
+     padding: 16px;
+     margin: 16px;
+     color: white;
+     border-radius: 5px;
+     font-size: 20px;
+     cursor: pointer;
+
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-flow: row nowrap;
+}
+
+.toggle-content span {
+     font-size: 24px;
+     font-weight: 800;
+}
+
+.pad-1 {}
+
+.pad-2 {}
+
+.pad-3 {}
