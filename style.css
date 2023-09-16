@@ -7,22 +7,28 @@
     --bg: #EDE6D3;
     --black: #131313;
     --red: #FF1800;
+    --orange: #F96049;
     --blush: #FF18006B;
     --spacing-xs: 5px;
     --spacing-sm: 10px;
     --spacing-md: 30px;
     --border-radius-md: 8px;
     --border-radius-sm: 4px;
+
+    --fontsize-h1: 2.2rem;
+    --fontsize-h2: 1.2rem;
+    --fontfamily: MolotGTRR;
 }
 
 body {
     background-color: var(--bg);
+    width: 100%;
 }
 
 #navbar {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
     align-items: center;
     margin: var(--spacing-md) auto;
 }
