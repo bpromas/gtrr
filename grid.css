@@ -2,16 +2,17 @@
      display: grid;
      grid-template-columns: repeat(12, 1fr);
      grid-template-rows: auto;
-     margin: 0 100px;
+     margin: 0 var(--spacing-xl);
      grid-template-areas:
           "nb nb nb nb nb nb nb nb nb nb nb nb"
-          ". img img img img img img img img img img ."
-          ". apre apre apre apre apre apre apre apre apre apre ."
-          ". lazy lazy lazy lazy lazy lazy lazy lazy lazy lazy ."
-          ". ajud ajud ajud ajud ajud ajud ajud ajud ajud ajud ."
-          ". obj obj obj obj obj obj obj obj obj obj ."
+          ". . img img img img img img img img . ."
+          ". . . apre apre apre apre apre apre . . ."
+          "cta cta cta cta cta cta cta cta cta . . ."
+          ". . . ajud ajud ajud ajud ajud ajud ajud . ."
+          ". obj obj obj obj obj obj obj . . . ."
           "ft ft ft ft ft ft ft ft ft ft ft ft";
      place-items: center;
+     row-gap: 3rem;
 }
 
 #navbar {
@@ -26,8 +27,9 @@
      grid-area: apre;
 }
 
-.sorry-for-preguica {
-     grid-area: lazy;
+.call-to-action {
+     grid-area: cta;
+     width: 100%;
 }
 
 .ajudar {
