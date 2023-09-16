@@ -154,9 +154,17 @@ a {
 
 h1 {
 	text-align: center;
-	line-height: 150%;
+	line-height: 1.5em;
 	letter-spacing: 0.82px;
 	font-size: var(--font-size-lg);
+	font-family: var(--fontfamily);
+}
+
+h2 {
+	text-align: center;
+	line-height: 1.5em;
+	letter-spacing: 2.42px;
+	font-size: var(--font-size-md);
 	font-family: var(--fontfamily);
 }
 

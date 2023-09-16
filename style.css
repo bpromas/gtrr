@@ -121,3 +121,28 @@ body {
 .objetivo .outside-links{
     text-align: right;
 }
+
+.footer{
+    width: 100%;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-md);
+}
+
+.footer .promos {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+.footer .promos .socials {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+}

@@ -43,3 +43,7 @@
 .objetivo {
      grid-area: obj;
 }
+
+.footer {
+     grid-area: ft;
+}
