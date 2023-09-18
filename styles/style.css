@@ -31,6 +31,22 @@ body {
     width: 100%;
 }
 
+.button-link {
+    white-space: nowrap;
+	border: 3px solid var(--black);
+	letter-spacing: 0.02em;
+	font-family: var(--fontfamily);
+	font-size: var(--font-size-md);
+	border-radius: 12px;
+	padding: 15px 39px 15px 42px;
+}
+
+
+.button-link.dark {
+    color: var(--white);
+    border-color: var(--white);
+}
+
 #navbar {
     display: flex;
     justify-content: space-between;
@@ -150,10 +166,10 @@ body {
 
 .footer{
     width: 100%;
-    display: flex;
-    align-items: top;
-    justify-content: space-between;
-    margin-bottom: var(--spacing-md);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 186px);
+    gap: var(--spacing-md);
+    justify-content: space-between
 }
 
 .footer .promos {
@@ -167,6 +183,7 @@ body {
 }
 
 .footer .list {
+    white-space: nowrap;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

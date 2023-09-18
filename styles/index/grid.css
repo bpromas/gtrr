@@ -10,7 +10,7 @@
           ". . img img img img img img img img . ."
           ". . . apre apre apre apre apre apre . . ."
           "cta cta cta cta cta cta cta cta cta . . ."
-          ". . . ajud ajud ajud ajud ajud ajud ajud . ."
+          ". . . ajud ajud ajud ajud ajud ajud . . ."
           ". obj obj obj obj obj obj obj . . . ."
           "ft ft ft ft ft ft ft ft ft ft ft ft";
      place-items: center;
@@ -51,3 +51,16 @@ footer-component {
      grid-area: ft;
      width: 100%;
 }
+
+@media (max-width: 768px) {
+     .main-grid {
+          grid-template-areas:
+          "nb nb nb nb nb nb nb nb nb nb nb nb"
+          ". img img img img img img img img img img ."
+          "apre apre apre apre apre apre apre apre apre apre apre apre"
+          "cta cta cta cta cta cta cta cta cta cta cta cta"
+          "ajud ajud ajud ajud ajud ajud ajud ajud ajud ajud ajud ajud"
+          "obj obj obj obj obj obj obj obj obj obj obj ."
+          "ft ft ft ft ft ft ft ft ft ft ft ft";
+     }
+ }

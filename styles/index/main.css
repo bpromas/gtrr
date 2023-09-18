@@ -1,5 +1,6 @@
 .imagem img {
     width: 100%;
+    min-width: 480px;
     height: auto;
 }
 
@@ -42,7 +43,7 @@
     letter-spacing: 1.68px;
 }
 
-.call-to-action a.link-arrow{
+.call-to-action a.link-arrow {
     margin-right: var(--spacing-md);
     display: inline-flex;
     align-items: center;
@@ -52,6 +53,7 @@
 }
 
 .ajudar h1 {
+    white-space: nowrap; 
     display: inline-flex;
     align-items: center;
     gap: var(--spacing-sm);
@@ -60,16 +62,10 @@
 
 .ajudar p {
     line-height: 1.5rem;
-    text-align: left;
 }
 
-.button-link {
-	border: 3px solid var(--black);
-	letter-spacing: 0.02em;
-	font-family: var(--fontfamily);
-	font-size: var(--font-size-md);
-	border-radius: 12px;
-	padding: 15px 39px;
+.ajudar .outside-links {
+    margin-top: var(--spacing-md);    
 }
 
 .objetivo h1 {
@@ -92,5 +88,9 @@
 }
 
 .objetivo .outside-links{
-    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
 }
