@@ -173,6 +173,10 @@ body {
     gap: var(--spacing-sm);
 }
 
+.footer .list a:hover {
+    color: var(--red);
+}
+
 @media (max-width: 768px) {
     .nav-options {
         display: none;
