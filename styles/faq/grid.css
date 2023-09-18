@@ -7,6 +7,7 @@
      padding: 0 100px;
      grid-template-areas:
           "nb nb nb nb nb nb nb nb nb nb nb nb"
+          "fq fq fq fq fq fq fq fq fq fq fq fq"
           "ft ft ft ft ft ft ft ft ft ft ft ft";
      place-items: center;
      row-gap: 3rem;
@@ -14,6 +15,11 @@
 
 header-component {
      grid-area: nb;
+     width: 100%;
+}
+
+.faq {
+     grid-area: fq;
      width: 100%;
 }
 
