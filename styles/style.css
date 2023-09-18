@@ -1,5 +1,5 @@
-@font-face { font-family: MolotGTRR; src: url('/assets/fonts/Molot_GTRR.otf'); } 
-@font-face { font-family: OpenDyslexic; src: url('/assets/fonts/OpenDyslexicAlta-Regular.otf');}
+@font-face { font-family: MolotGTRR; src: url('../assets/fonts/Molot_GTRR.otf'); } 
+@font-face { font-family: OpenDyslexic; src: url('../assets/fonts/OpenDyslexicAlta-Regular.otf');}
 
 /* variáveis */
 :root {
@@ -56,7 +56,7 @@ body {
 }
 .nav-item.active::before {
     position: relative;
-    content: url("/assets/img/navbar-active-dot.svg");
+    content: url("../assets/img/navbar-active-dot.svg");
     color: var(--black) !important;
     top: 1em;
     left: 50%;
