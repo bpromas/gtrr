@@ -61,8 +61,8 @@ customElements.define('header-component', Header);
 
 // adicionar classe active
 const path = window.location.pathname;
-const page = path.split("/").pop();
-
+let page = path.split("/").pop();
+page = page === "" ? "index.html" : page; //caso path vazio assume-se index.html
 const actives = document.querySelectorAll(`a[href="${page}"]`)
 actives.forEach(element => {
     element.classList.add("active");
