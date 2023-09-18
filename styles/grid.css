@@ -1,8 +1,10 @@
 .main-grid {
+     max-width: 1440px;
      display: grid;
      grid-template-columns: repeat(12, 1fr);
      grid-template-rows: auto;
-     margin: 0 var(--spacing-xl);
+     margin: 0 auto;
+     padding: 0 100px;
      grid-template-areas:
           "nb nb nb nb nb nb nb nb nb nb nb nb"
           ". . img img img img img img img img . ."
@@ -15,8 +17,9 @@
      row-gap: 3rem;
 }
 
-#navbar {
+header-component {
      grid-area: nb;
+     width: 100%;
 }
 
 .imagem {
@@ -44,6 +47,7 @@
      grid-area: obj;
 }
 
-.footer {
+footer-component {
      grid-area: ft;
+     width: 100%;
 }

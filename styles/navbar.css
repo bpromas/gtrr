@@ -23,9 +23,9 @@
 }
 .nav-item.active::before {
     position: relative;
-    content: ".";
+    content: url("/assets/img/navbar-active-dot.svg");
     color: var(--black) !important;
-    top: 0.8em;
+    top: 1em;
     left: 50%;
 }
 

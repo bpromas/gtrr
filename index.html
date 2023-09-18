@@ -6,69 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GTRR</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="grid.css">
-
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/grid.css">
+    <script src="/components/header.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="/components/footer.js" defer></script>
 </head>
 
 <body>
-    <!-- grid  -->
     <main class="main-grid">
-        <header id="navbar">
-
-            <!-- padrão de nomeação: a `.nav-options` pode possuir `.nav-item`s e `.sub-nav`s, 
-                da mesma forma que a `.hamburger-options` menu pode possuir `.hamburger-item`s ou `.sub-hamburger`s -->
-            <a href="index.html"><img class="header-logo" src="assets/img/GTRR Logo.svg" alt="GTRR"></a>
-            <nav class="nav-options">
-                <a class="nav-item active" href="index.html">INÍCIO</a>
-                <a class="nav-item" href="primeiros-passos.html">PRIMEIROS PASSOS</a>
-                <div class="sub-nav">
-                    <button class="sub-nav-btn">SOBRE <img src="assets/img/carat-down.svg" alt="(+)"></button>
-                    <div class="sub-nav-content">
-                        <a class="sub-nav-item" href="sobre-nos/estatuto.html">ESTATUTO</a>
-                        <a class="sub-nav-item" href="sobre-nos/manifesto.html">MANIFESTO</a>
-                    </div>
-                </div>
-                <a class="nav-item" href="faq.html">FAQ</a>
-                <div class="sub-nav">
-                    <button class="sub-nav-btn">PROJETOS <img src="assets/img/carat-down.svg" alt="(+)"></button>
-                    <div class="sub-nav-content">
-                        <a class="sub-nav-item" href="projetos/em-andamento.html">EM ANDAMENTO</a>
-                        <a class="sub-nav-item" href="projetos/finalizados.html">FINALIZADOS</a>
-                        <a class="sub-nav-item" href="projetos/sugestao.html">SUGIRA UM PROJETO</a>
-                    </div>
-                </div>
-                <a class="nav-item" href="cadastro.html">CADASTRO</a>
-            </nav>
-        </header>
-
-        <!-- hamburger menu, visível apenas em larguras menores que 768px -->
-        <div class="hamburger-menu">
-            <span class="hamburger-icon">☰</span>
-            <div class="hamburger-options">
-                <a class="hamburger-item active" href="index.html">INÍCIO</a>
-                <a class="hamburger-item" href="primeiros-passos.html">PRIMEIROS PASSOS</a>
-                <div class="sub-hamburger">
-                    <a class="sub-hamburger-btn">SOBRE</a>
-                    <div class="sub-hamburger-content">
-                        <a class="sub-hamburger-item" href="sobre-nos/estatuto.html">ESTATUTO</a>
-                        <a class="sub-hamburger-item" href="sobre-nos/manifesto.html">MANIFESTO</a>
-                    </div>
-                </div>
-                <a class="hamburger-item" href="faq.html">FAQ</a>
-                <div class="sub-hamburger">
-                    <button class="sub-hamburger-btn">PROJETOS</button>
-                    <div class="sub-hamburger-content">
-                        <a class="sub-hamburger-item" href="projetos/em-andamento.html">EM ANDAMENTO</a>
-                        <a class="sub-hamburger-item" href="projetos/finalizados.html">FINALIZADOS</a>
-                        <a class="sub-hamburger-item" href="projetos/sugestao.html">SUGIRA UM PROJETO</a>
-                    </div>
-                </div>
-                <a class="hamburger-item" href="cadastro.html">CADASTRO</a>
-            </div>
-        </div>
+        <header-component></header-component>
 
 
         <section class="imagem">
@@ -123,48 +72,17 @@
                 enquanto fornecemos formação à nova geração de profissionais de tradução sob uma ótica radical e
                 crítica.</p>
             <div class="outside-links">
-                <a href="#" class="links">MANIFESTO</a>
-                <a href="#" class="links">ESTATUTO</a>
+                <a href="#" class="button-link">MANIFESTO</a>
+                <a href="#" class="button-link">ESTATUTO</a>
             </div>
         </section>
 
 
-        <footer class="footer">
-            <div class="promos">
-                <img src="assets/img/GTRR Footer.svg" alt="GTRR">
-                <div class="socials">
-                    <a href="#"><img src="assets/img/Twitter.svg" alt="Twitter"></a>
-                    <a href="#"><img src="assets/img/Instagram.svg" alt="Instagram"></a>
-                    <a href="#"><img src="assets/img/TikTok.svg" alt="TikTok"></a>
-                    <a href="#"><img src="assets/img/YouTube.svg" alt="YouTube"></a>
-                </div>
-            </div>
-
-            <div class="list">
-                <h2>ESSENCIAIS</h2>
-                <a href="index.html">INÍCIO</a>
-                <a href="primeiros-passos.html">PRIMEIROS PASSOS</a>
-                <a href="sobre-nos/estatuto.html">ESTATUTO</a>
-                <a href="sobre-nos/manifesto.html">MANIFESTO</a>
-                <a href="faq.html">PERGUNTAS FREQUENTES</a>
-            </div>
-            <div class="list">
-                <h2>FORMULÁRIOS</h2>
-                <a href="projetos/sugestao.html">SUGESTÃO DE PROJETO</a>
-                <a href="cadastro.html">CADASTRO</a>
-            </div>
-            <div class="list">
-                <h2>PROJETOS</h2>
-                <a href="projetos/em-andamento.html">EM ANDAMENTO</a>
-                <a href="projetos/finalizados.html">FINALIZADOS</a>
-            </div>
-        </footer>
+        <footer-component></footer-component>
 
 
     </main>
 
-
-    <script src="script.js" defer></script>
 </body>
 
 </html>

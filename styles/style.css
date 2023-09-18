@@ -1,5 +1,5 @@
-@font-face { font-family: MolotGTRR; src: url('assets/fonts/Molot_GTRR.otf'); } 
-@font-face { font-family: OpenDyslexic; src: url('assets/fonts/OpenDyslexicAlta-Regular.otf');}
+@font-face { font-family: MolotGTRR; src: url('/assets/fonts/Molot_GTRR.otf'); } 
+@font-face { font-family: OpenDyslexic; src: url('/assets/fonts/OpenDyslexicAlta-Regular.otf');}
 
 /* variáveis */
 :root {
@@ -14,6 +14,7 @@
     --font-size-sm: 18px;
     --font-size-md: 21px;
     --font-size-lg: 41px;
+    --letter-spacing: 2%;
     --spacing-xs: 5px;
     --spacing-sm: 10px;
     --spacing-md: 30px;
@@ -22,7 +23,6 @@
     --border-radius-md: 8px;
     --border-radius-sm: 4px;
 
-    --fontsize-h2: 1.2rem;
     --fontfamily: MolotGTRR;
 }
 
@@ -66,7 +66,7 @@ body {
 }
 
 .call-to-action a.link-button{
-    font-family: var(--fontfamily);
+    font-family: MolotGTRR;
     font-size: var(--font-size-md);
     color: var(--white);
     border: 3px solid var(--white);
@@ -97,6 +97,15 @@ body {
 .ajudar p {
     line-height: 1.5rem;
     text-align: left;
+}
+
+.button-link {
+	border: 3px solid var(--black);
+	letter-spacing: 0.02em;
+	font-family: var(--fontfamily);
+	font-size: var(--font-size-md);
+	border-radius: 12px;
+	padding: 15px 39px;
 }
 
 .objetivo h1 {
