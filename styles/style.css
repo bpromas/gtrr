@@ -169,7 +169,8 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, 186px);
     gap: var(--spacing-md);
-    justify-content: space-between
+    justify-content: space-between;
+    margin-bottom: var(--spacing-md);
 }
 
 .footer .promos {
