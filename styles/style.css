@@ -31,104 +31,121 @@ body {
     width: 100%;
 }
 
-/* CSS da navbar foi extraída para navbar.css */
-
-.imagem img {
+#navbar {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    height: auto;
+    align-items: center;
+    margin: var(--spacing-md) auto;
 }
 
-
-.apresentacao p {
-    line-height: 1.5rem;
-    text-align: center;
-    font-size: var(--font-size-sm);
-}
-
-.apresentacao span {
-    background-color: var(--orange);
-}
-
-.call-to-action div {
+.nav-options {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     gap: var(--spacing-md);
 }
-.call-to-action div::after  {
-    display: block;
-    content: '';
-    background-color: var(--black);
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    z-index: -1;
+
+.nav-item {
+    display: inline-block;
+    color: var(--black);
+    text-align: center;
 }
 
-.call-to-action a.link-button{
-    font-family: MolotGTRR;
-    font-size: var(--font-size-md);
-    color: var(--white);
-    border: 3px solid var(--white);
-    border-radius: var(--border-radius-lg);
-    padding: 15px 40px;
-
-    font-weight: 400;
-    line-height: 1.5rem;
-    letter-spacing: 1.68px;
+.nav-item.active, .hamburger-item.active {
+    color: var(--red);
 }
-
-.call-to-action a.link-arrow{
-    margin-right: var(--spacing-md);
-    display: inline-flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-    color: var(--white);
-    font-size: var(--font-size-md);
-}
-
-.ajudar h1 {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-    word-wrap: none;
-}
-
-.ajudar p {
-    line-height: 1.5rem;
-    text-align: left;
-}
-
-.button-link {
-	border: 3px solid var(--black);
-	letter-spacing: 0.02em;
-	font-family: var(--fontfamily);
-	font-size: var(--font-size-md);
-	border-radius: 12px;
-	padding: 15px 39px;
-}
-
-.objetivo h1 {
-    text-align: right;
-}
-.objetivo h1::before {
-    display: block;
-    content: '';
-    border-bottom: 3px solid var(--black);
+.nav-item.active::before {
     position: relative;
-    top: 1.5em;
-    left: -50%;
-    width: 150%;
+    content: url("/assets/img/navbar-active-dot.svg");
+    color: var(--black) !important;
+    top: 1em;
+    left: 50%;
+}
+
+.sub-nav-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+/* hover stuff */
+
+.sub-nav-content {
+    display: none;
+    color: var(--black);
+    position: absolute;
+    padding: var(--spacing-sm);
+    margin-top: var(--spacing-xs);
+    border-left: 2px solid var(--black);
+}
+.sub-nav:hover .sub-nav-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.nav-item:hover, .sub-nav-item:hover {
+    color: var(--red);
+}
+
+.sub-nav:hover {
+    color: var(--red);
+}
+
+/* hamburger stuff */
+
+.hamburger-menu {
+    position: absolute;
+    top: var(--spacing-md);
+    right: 10%;
+    display: none;
+}
+
+.hamburger-options {
+    display: none;
+}
+
+.sub-hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.sub-hamburger-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: var(--spacing-sm);
+    margin: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    border-right: 2px solid var(--black);
+}
+
+/* hamburger hover stuff */
+
+.hamburger-menu:hover .hamburger-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    margin: var(--spacing-sm);
+    border-right: 2px solid var(--black);
+}
+
+.hamburger-item::before, .sub-hamburger-item::before {
+    visibility: hidden;
+    display: block;
+    content: '';
+    border-bottom: 2px solid var(--black);
+    position: relative;
+    top: 1.5rem;
+    left: 50%; /* para cobrir apenas a metade da direita */
+    width: 50%;
     z-index: -1;
 }
-
-.objetivo p {
-    text-align: right;
-    line-height: 150%;
-}
-
-.objetivo .outside-links{
-    text-align: right;
+.hamburger-item:hover::before, .sub-hamburger-item:hover::before {
+    visibility: visible;
 }
 
 .footer{
@@ -154,4 +171,17 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: var(--spacing-sm);
+}
+
+@media (max-width: 768px) {
+    .nav-options {
+        display: none;
+    }
+    
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        overflow-y: visible;
+    }
 }

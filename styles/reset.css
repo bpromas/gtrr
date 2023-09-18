@@ -135,9 +135,7 @@ table {
 }
 
 /* custom resets */
-button,
-input[type="submit"],
-input[type="reset"] {
+button {
 	background: none;
 	color: inherit;
 	border: none;
@@ -155,7 +153,7 @@ a {
 h1 {
 	text-align: center;
 	line-height: 1.5em;
-	letter-spacing: 0.82px;
+	letter-spacing: 0.02em;
 	font-size: var(--font-size-lg);
 	font-family: var(--fontfamily);
 }
@@ -163,7 +161,7 @@ h1 {
 h2 {
 	text-align: center;
 	line-height: 1.5em;
-	letter-spacing: 2.42px;
+	letter-spacing: 0.11em;
 	font-size: var(--font-size-md);
 	font-family: var(--fontfamily);
 }
