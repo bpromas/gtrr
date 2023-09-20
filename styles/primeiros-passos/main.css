@@ -1,0 +1,139 @@
+section{
+    margin-bottom: var(--spacing-md);
+}
+
+
+p{
+    font-size: 16px;
+    line-height: 133%;
+}
+
+
+/* tentativa de padronização de "div.info-list", TO-DO: mover p/ style central */
+div.info-list h2{
+    font-size: 31px;
+    display: inline;
+    background-color: var(--black);
+    color: var(--bg);
+    padding: var(--spacing-sm);
+
+    position: relative;
+    top: 0.8rem;
+    left: 1em;
+}
+
+/* lista principal */
+div.info-list>ul{
+    font-size: 16px;
+    background-color: var(--orange);
+    padding: 13px 35px;
+    border-radius: 5px;
+    list-style-position: inside;
+    line-height: 1.5em;
+}
+div.info-list>ul>li::before {
+    content: url('../../assets/img/arrow-right-normal.svg');
+    position: relative;
+    top: 0.3em;
+}
+
+/* sub-listas */
+div.info-list li>ul{ 
+    font-size: 16px;
+    padding: 0px 35px;
+    list-style-position: inside;
+    line-height: 1.5em;
+}
+div.info-list li>ul>li::before {
+    content: url('../../assets/img/navbar-active-dot.svg');
+    position: relative;
+    bottom: 0.2em;
+    margin: 0 var(--spacing-sm);
+}
+
+
+
+
+
+
+/* GRID */
+
+.main-grid {
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    margin: 0 auto;
+    padding: 0 100px;
+    grid-template-areas:
+         "nb nb nb nb nb nb nb nb nb nb nb nb"
+         ". . welc welc welc welc welc welc welc welc . ."
+         ". prga prga prga prga prga prga prga prga prga prga ."
+         ". . oque oque oque oque oque oque oque oque . ."
+         ". prgb prgb prgb prgb prgb prgb prgb prgb prgb prgb ."
+         ". . . pass pass pass pass pass pass pass pass pass"
+         "prim prim prim prim prim prim segu segu segu segu segu segu"
+         "prim prim prim prim prim prim medo medo medo medo medo medo"
+         ". . . seee seee seee seee seee seee seee seee seee"
+         "ft ft ft ft ft ft ft ft ft ft ft ft";
+    place-items: center;
+    /* row-gap: 3rem; */
+}
+
+header-component {
+    grid-area: nb;
+    width: 100%;
+}
+
+.welcome {
+    grid-area: welc;
+}
+
+.welcome img {
+    width: 100%;
+}
+
+.paragraph-a {
+    grid-area: prga;
+    width: 100%;
+}
+
+.oque-fazemos {
+    grid-area: oque;
+    width: 100%;
+}
+
+.paragraph-b {
+    grid-area: prgb;
+    width: 100%;
+}
+
+.primeiros-passos {
+    grid-area: pass;
+    width: 100%;
+}
+
+.primeiro {
+    grid-area: prim;
+    width: 100%;
+}
+
+.segundo {
+    grid-area: segu;
+    width: 100%;
+}
+
+.medo {
+    grid-area: medo;
+    width: 100%;
+}
+
+.see-more {
+    grid-area: seee;
+    width: 100%;
+}
+
+footer-component {
+    grid-area: ft;
+    width: 100%;
+}
