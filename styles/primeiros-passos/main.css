@@ -1,11 +1,7 @@
-section{
-    margin-bottom: var(--spacing-md);
-}
-
-
 p{
     font-size: 16px;
-    line-height: 133%;
+    line-height: 150%;
+    margin-bottom: var(--spacing-md);
 }
 
 .paragraph-b p{
@@ -18,9 +14,31 @@ p{
     margin-top: var(--spacing-sm);
 }
 
+.primeiro .cta-left{
+    margin: 50px 0px;
+}
+
+
+
+
+
+/* tentativa de padronização de ".block-title", TO-DO: mover p/ style central */
+.block-title {
+    font-size: 41px;
+    display: inline;
+    background-color: var(--black);
+    color: var(--bg);
+    line-height: 150%;  
+    text-align: center;
+    letter-spacing: 0.02em;
+    padding: var(--spacing-sm);
+    padding-bottom: var(--spacing-xs);
+}
+
 
 /* tentativa de padronização de "div.info-list", TO-DO: mover p/ style central */
 div.info-list h2{
+    vertical-align: middle;
     font-size: 31px;
     display: inline;
     background-color: var(--black);
@@ -61,7 +79,7 @@ div.info-list li>ul>li::before {
     margin: 0 var(--spacing-sm);
 }
 
-/* tentativa de padronização de ".right-line-title", TO-DO: mover p/ style central */
+/* padronização de ".right-line-title", TO-DO: mover p/ style central */
 
 .right-line-title {
     text-align: left;
@@ -76,9 +94,39 @@ div.info-list li>ul>li::before {
     z-index: -1;
 }
 
+/* padronização de ".cta-left, TO-DO: mover p/ style central"*/
 
+.cta-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--spacing-md);
+}
 
+.cta-left::before  {
+    display: block;
+    content: '';
+    background-color: var(--black);
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    z-index: -1;
+}
 
+.cta-left a.link-button{
+    font-family: MolotGTRR;
+    font-size: var(--font-size-md);
+    color: var(--white);
+    border: 3px solid var(--white);
+    border-radius: var(--border-radius-lg);
+    padding: 15px 40px;
+    margin-right: var(--spacing-md);
+    white-space: nowrap;
+
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 1.68px;
+}
 
 
 
@@ -87,6 +135,7 @@ div.info-list li>ul>li::before {
 .main-grid {
     max-width: 1440px;
     display: grid;
+    row-gap: var(--spacing-md);
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     margin: 0 auto;
@@ -99,7 +148,6 @@ div.info-list li>ul>li::before {
          ". prgb prgb prgb prgb prgb prgb prgb prgb prgb prgb ."
          ". . . pass pass pass pass pass pass pass pass pass"
          "prim prim prim prim prim prim segu segu segu segu segu segu"
-         "prim prim prim prim prim prim medo medo medo medo medo medo"
          ". . . seee seee seee seee seee seee seee seee seee"
          "ft ft ft ft ft ft ft ft ft ft ft ft";
     place-items: center;
@@ -141,12 +189,14 @@ header-component {
 
 .primeiro {
     grid-area: prim;
-    width: 100%;
+    width: 95%;
+    height: 100%;
 }
 
 .segundo {
     grid-area: segu;
-    width: 100%;
+    width: 95%;
+    height: 100%;
 }
 
 .medo {
