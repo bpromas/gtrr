@@ -8,6 +8,16 @@ p{
     line-height: 133%;
 }
 
+.paragraph-b p{
+    text-align: center;
+}
+
+.primeiros-passos p{
+    max-width: 485px;
+    min-width: 250px;
+    margin-top: var(--spacing-sm);
+}
+
 
 /* tentativa de padronização de "div.info-list", TO-DO: mover p/ style central */
 div.info-list h2{
@@ -50,6 +60,22 @@ div.info-list li>ul>li::before {
     bottom: 0.2em;
     margin: 0 var(--spacing-sm);
 }
+
+/* tentativa de padronização de ".right-line-title", TO-DO: mover p/ style central */
+
+.right-line-title {
+    text-align: left;
+}
+.right-line-title::before {
+    display: block;
+    content: '';
+    border-bottom: 3px solid var(--black);
+    position: relative;
+    top: 1.5em;
+    width: 150%;
+    z-index: -1;
+}
+
 
 
 
