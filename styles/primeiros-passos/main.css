@@ -14,8 +14,18 @@ p{
     margin-top: var(--spacing-sm);
 }
 
-.primeiro .cta-left{
-    margin: 50px 0px;
+.segundo .cta-right::before{
+    height: 60px;
+}
+
+.segundo h2{
+    margin-top: 100px;
+    font-size: 35px;
+}
+
+
+.see-more .cta-right::before{
+    height: 60px;
 }
 
 
@@ -79,7 +89,7 @@ div.info-list li>ul>li::before {
     margin: 0 var(--spacing-sm);
 }
 
-/* padronização de ".right-line-title", TO-DO: mover p/ style central */
+/* padronização de .right-line-title, TO-DO: mover p/ style central */
 
 .right-line-title {
     text-align: left;
@@ -90,17 +100,18 @@ div.info-list li>ul>li::before {
     border-bottom: 3px solid var(--black);
     position: relative;
     top: 1.5em;
-    width: 150%;
+    width: 200%;
     z-index: -1;
 }
 
-/* padronização de ".cta-left, TO-DO: mover p/ style central"*/
+/* padronização de .cta-left, TO-DO: mover p/ style central*/
 
 .cta-left {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: flex-end;
     gap: var(--spacing-md);
+    margin: 50px 0px;
 }
 
 .cta-left::before  {
@@ -113,14 +124,35 @@ div.info-list li>ul>li::before {
     z-index: -1;
 }
 
-.cta-left a.link-button{
+/* padronização de .cta-right, TO-DO: mover p/ style central */
+
+.cta-right {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--spacing-md);
+    margin: 50px 0px;
+}
+
+.cta-right::before  {
+    display: block;
+    content: '';
+    background-color: var(--black);
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    z-index: -1;
+}
+
+/* padronização de a.link-button, TO-DO: mover p/ style central"*/
+a.link-button{
     font-family: MolotGTRR;
     font-size: var(--font-size-md);
     color: var(--white);
     border: 3px solid var(--white);
     border-radius: var(--border-radius-lg);
     padding: 15px 40px;
-    margin-right: var(--spacing-md);
+    margin: 0px var(--spacing-md);
     white-space: nowrap;
 
     font-weight: 400;
@@ -128,6 +160,22 @@ div.info-list li>ul>li::before {
     letter-spacing: 1.68px;
 }
 
+/* padronização de a.link-arrow, TO-DO: mover p/ style central"*/
+a.link-arrow{
+    margin-right: var(--spacing-md);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--white);
+    font-size: var(--font-size-md);
+
+    margin: 0px var(--spacing-md);
+    white-space: nowrap;
+}
+
+a.link-arrow:after{
+    content: url("../../assets/img/Arrow\ 1.svg");
+}
 
 
 /* GRID */
