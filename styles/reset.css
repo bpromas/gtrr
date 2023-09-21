@@ -156,6 +156,7 @@ h1 {
 	letter-spacing: 0.02em;
 	font-size: var(--font-size-lg);
 	font-family: var(--fontfamily);
+    white-space: nowrap;
 }
 
 h2 {
@@ -164,4 +165,5 @@ h2 {
 	letter-spacing: 0.02em;
 	font-size: var(--font-size-md);
 	font-family: var(--fontfamily);
+    white-space: nowrap;
 }

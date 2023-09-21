@@ -1,7 +1,5 @@
-p{
-    font-size: 16px;
-    line-height: 150%;
-    margin-bottom: var(--spacing-md);
+.paragraph-a p:last-child{
+    margin-bottom: 0;
 }
 
 .paragraph-b p{
@@ -18,8 +16,9 @@ p{
     height: 60px;
 }
 
-.segundo h2{
+.segundo h2.medo{
     margin-top: 100px;
+    margin-bottom: 20px;
     font-size: 35px;
 }
 
@@ -28,9 +27,12 @@ p{
     height: 60px;
 }
 
-
-
-
+/* tentativa de padronização de p, TO-DO: mover p/ style central */
+p{
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: var(--spacing-md);
+}
 
 /* tentativa de padronização de ".block-title", TO-DO: mover p/ style central */
 .block-title {
@@ -199,7 +201,6 @@ a.link-arrow:after{
          ". . . seee seee seee seee seee seee seee seee seee"
          "ft ft ft ft ft ft ft ft ft ft ft ft";
     place-items: center;
-    /* row-gap: 3rem; */
 }
 
 header-component {
