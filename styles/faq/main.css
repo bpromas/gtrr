@@ -1,0 +1,49 @@
+.show-text {
+     margin: 46px 0;
+}
+
+.show-text h3 {
+     font-family: MolotGTRR;
+     text-transform: uppercase;
+     color: var(--bg);
+}
+
+.toggle-content {
+     background-color: var(--black);
+     padding: 18px 25px;
+     border-radius: 5px;
+     color: white;
+     font-size: 20px;
+     cursor: pointer;
+
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-flow: row nowrap;
+}
+
+.toggle-content span {
+     font-size: 26px;
+     font-weight: 800;
+}
+
+.show {
+     display: none;
+     line-height: 150%;
+     font-weight: 400;
+     padding: 16px 0;
+}
+
+.center {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+
+.orange {
+     background-color: var(--orange);
+     font-size: 82px;
+     padding: 0 40px;
+}
