@@ -1,10 +1,12 @@
 // expande caixas FAQ
-const showTextElements = document.querySelectorAll('.show-text');
+const toggleContentElement = document.querySelectorAll('.toggle-content');
 
-showTextElements.forEach(element => {
+toggleContentElement.forEach(element => {
      element.addEventListener('click', function () {
-          const showElement = this.querySelector('.show');
-          const sign = this.querySelector('.toggle-content span');
+          const parent = element.parentElement;
+
+          const showElement = parent.querySelector('.show');
+          const sign = this.querySelector('span');
           
           if (showElement.style.display === 'none' || showElement.style.display === '') {
                showElement.style.display = 'block';
