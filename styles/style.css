@@ -56,7 +56,7 @@ p{
 }
 
 
-span.highlight{
+.highlight{
     background-color: var(--orange) ;
 }
 
