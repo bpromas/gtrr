@@ -4,96 +4,25 @@
      height: auto;
  }
  
- .apresentacao p {
-     line-height: 1.5rem;
-     text-align: center;
-     font-size: var(--font-size-sm);
- }
- 
- .apresentacao span {
-     background-color: var(--orange);
- }
- 
- .call-to-action div {
-     display: flex;
-     align-items: center;
-     justify-content: flex-end;
-     gap: var(--spacing-md);
- }
- .call-to-action div::after  {
-     display: block;
-     content: '';
-     background-color: var(--black);
-     position: absolute;
-     width: 100%;
-     height: 100px;
-     z-index: -1;
- }
- 
- .call-to-action a.link-button{
-     font-family: MolotGTRR;
-     font-size: var(--font-size-md);
-     color: var(--white);
-     border: 3px solid var(--white);
-     border-radius: var(--border-radius-lg);
-     padding: 15px 40px;
- 
-     font-weight: 400;
-     line-height: 1.5rem;
-     letter-spacing: 1.68px;
- }
- 
- .call-to-action a.link-arrow {
-     margin-right: var(--spacing-md);
-     display: inline-flex;
-     align-items: center;
-     gap: var(--spacing-sm);
-     color: var(--white);
-     font-size: var(--font-size-md);
- }
- 
- .ajudar h1 {
-     white-space: nowrap; 
-     display: inline-flex;
-     align-items: center;
-     gap: var(--spacing-sm);
-     word-wrap: none;
- }
- 
- .ajudar p {
-     line-height: 1.5rem;
- }
- 
- .ajudar .outside-links {
-     margin-top: var(--spacing-md);    
- }
- 
- .objetivo h1 {
-     text-align: right;
- }
- .objetivo h1::before {
-     display: block;
-     content: '';
-     border-bottom: 3px solid var(--black);
-     position: relative;
-     top: 1.5em;
-     left: -50%;
-     width: 150%;
-     z-index: -1;
- }
- 
- .objetivo p {
-     text-align: right;
-     line-height: 150%;
- }
- 
- .objetivo .outside-links{
-     display: flex;
-     align-items: center;
-     justify-content: flex-end;
-     gap: var(--spacing-md);
-     margin-top: var(--spacing-md);
- }
+.apresentacao p {
+    text-align: center;
+}
+
+.ajudar{
+    margin-top: var(--spacing-md);    
+}
+
+.objetivo p {
+    text-align: right;
+}
+
+.objetivo .outside-links{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
  
 
 .main-grid {
@@ -104,45 +33,41 @@
      margin: 0 auto;
      padding: 0 100px;
      grid-template-areas:
-          "nb nb nb nb nb nb nb nb nb nb nb nb"
-          ". . img img img img img img img img . ."
-          ". . . apre apre apre apre apre apre . . ."
-          "cta cta cta cta cta cta cta cta cta . . ."
-          ". . . ajud ajud ajud ajud ajud ajud . . ."
-          ". obj obj obj obj obj obj obj . . . ."
+          "hd hd hd hd hd hd hd hd hd hd hd hd"
+          ". . im im im im im im im im . ."
+          ". . . ap ap ap ap ap ap . . ."
+          "ca ca ca ca ca ca ca ca ca . . ."
+          ". . . aj aj aj aj aj aj . . ."
+          ". ob ob ob ob ob ob ob . . . ."
           "ft ft ft ft ft ft ft ft ft ft ft ft";
      place-items: center;
      row-gap: 3rem;
 }
 
 header-component {
-     grid-area: nb;
+     grid-area: hd;
      width: 100%;
 }
 
 .imagem {
-     grid-area: img;
+     grid-area: im;
 }
 
 .apresentacao {
-     grid-area: apre;
+     grid-area: ap;
 }
 
 .call-to-action {
-     grid-area: cta;
+     grid-area: ca;
      width: 100%;
 }
 
 .ajudar {
-     grid-area: ajud;
-}
-
-.ajudar {
-     grid-area: ajud;
+     grid-area: aj;
 }
 
 .objetivo {
-     grid-area: obj;
+     grid-area: ob;
 }
 
 footer-component {
@@ -153,12 +78,12 @@ footer-component {
 @media (max-width: 768px) {
      .main-grid {
           grid-template-areas:
-          "nb nb nb nb nb nb nb nb nb nb nb nb"
-          ". img img img img img img img img img img ."
-          "apre apre apre apre apre apre apre apre apre apre apre apre"
-          "cta cta cta cta cta cta cta cta cta cta cta cta"
-          "ajud ajud ajud ajud ajud ajud ajud ajud ajud ajud ajud ajud"
-          "obj obj obj obj obj obj obj obj obj obj obj ."
+          "hd hd hd hd hd hd hd hd hd hd hd hd"
+          ". im im im im im im im im im im ."
+          "ap ap ap ap ap ap ap ap ap ap ap ap"
+          "ca ca ca ca ca ca ca ca ca ca ca ca"
+          "aj aj aj aj aj aj aj aj aj aj aj aj"
+          "ob ob ob ob ob ob ob ob ob ob ob ."
           "ft ft ft ft ft ft ft ft ft ft ft ft";
      }
  }
