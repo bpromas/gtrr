@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,13 +11,24 @@
     <link rel="stylesheet" href="styles/em-andamento.css">
 
     <script src="script.js" defer></script>
-    <script src="components/header.js" defer></script>
-    <script src="components/footer.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+
+    <script>
+        $(function () {
+            $("#header").load("components/header.html");
+            $("#footer").load("components/footer.html");
+        });
+    </script>
+
 </head>
+
 <body>
     <main class="main-grid">
-        <header-component></header-component>
-        <footer-component></footer-component>
+        <header id="header"></header>
+        <footer id="footer"></footer>
     </main>
 </body>
+
 </html>

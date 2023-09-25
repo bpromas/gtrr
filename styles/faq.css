@@ -59,8 +59,13 @@
      row-gap: 3rem;
 }
 
-header-component {
+#header {
      grid-area: nb;
+     width: 100%;
+}
+
+#footer {
+     grid-area: ft;
      width: 100%;
 }
 
@@ -68,6 +73,7 @@ header-component {
      grid-area: fq;
      width: 100%;
 }
+
 .title {
      grid-area: tt;
      width: 100%;

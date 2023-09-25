@@ -50,8 +50,12 @@
     place-items: center;
 }
 
-header-component {
+#header {
     grid-area: nb;
+    width: 100%;
+}
+#footer {
+    grid-area: ft;
     width: 100%;
 }
 
@@ -102,10 +106,5 @@ header-component {
 
 .see-more {
     grid-area: seee;
-    width: 100%;
-}
-
-footer-component {
-    grid-area: ft;
     width: 100%;
 }

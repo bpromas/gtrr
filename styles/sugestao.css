@@ -12,12 +12,12 @@
      row-gap: 3rem;
 }
 
-header-component {
+#header {
      grid-area: nb;
      width: 100%;
 }
 
-footer-component {
+#footer {
      grid-area: ft;
      width: 100%;
 }

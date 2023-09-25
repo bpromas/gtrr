@@ -11,13 +11,26 @@
     <link rel="stylesheet" href="styles/faq.css">
 
     <script src="script.js" defer></script>
-    <script src="components/header.js" defer></script>
-    <script src="components/footer.js" defer></script>
+    <!-- <script src="components/header.js" defer></script>
+    <script src="components/footer.js" defer></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+
+    <script>
+        $(function () {
+            // $("header-component").load("components/header.html")
+            $("#header").load("components/header.html");
+            $("#footer").load("components/footer.html");
+        });
+    </script>
 </head>
 
 <body>
     <main class="main-grid">
-        <header-component></header-component>
+        <!-- <header-component></header-component> -->
+        <div id="header"></div>
 
         <section class="title">
             <h1 class="highlight">perguntas frequentes</h1>
@@ -148,7 +161,8 @@
             <p>Ou nos pergunte em nossas redes sociais!</p>
         </section>
 
-        <footer-component></footer-component>
+        <!-- <footer-component></footer-component> -->
+        <footer id="footer"></footer>
     </main>
 </body>
 
