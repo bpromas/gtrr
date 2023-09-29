@@ -23,34 +23,35 @@
      </nav>
 </header>
 <div class="hamburger-menu">
-     <span class="hamburger-icon">☰</span>
+     <!-- checkbox para usar a pseudoclasse :checked no css -->
+     <input class="checkbox" type="checkbox" name="" id="" /> 
+     <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+     </div>  
+
      <div class="hamburger-options">
-          <a class="hamburger-item" href="index.html">INÍCIO</a>
-          <a class="hamburger-item" href="primeiros-passos.html">PRIMEIROS PASSOS</a>
-          <div class="sub-hamburger">
-               <a class="sub-hamburger-btn">SOBRE</a>
-               <div class="sub-hamburger-content">
-                    <a class="sub-hamburger-item" href="estatuto.html">ESTATUTO</a>
-                    <a class="sub-hamburger-item" href="manifesto.html">MANIFESTO</a>
-               </div>
-          </div>
-          <a class="hamburger-item" href="faq.html">FAQ</a>
-          <div class="sub-hamburger">
-               <button class="sub-hamburger-btn">PROJETOS</button>
-               <div class="sub-hamburger-content">
-                    <a class="sub-hamburger-item" href="em-andamento.html">EM ANDAMENTO</a>
-                    <a class="sub-hamburger-item" href="finalizados.html">FINALIZADOS</a>
-                    <a class="sub-hamburger-item" href="sugestao.html">SUGIRA UM PROJETO</a>
-               </div>
-          </div>
-          <a class="hamburger-item" href="cadastro.html">CADASTRO</a>
+          <ul>
+               <h3>ESSENCIAIS</h3>
+               <li><a href="">INÍCIO</a></li>
+               <li><a href="">PRIMEIROS PASSOS</a></li>
+               <li><a href="">ESTATUTO</a></li>
+               <li><a href="">MANIFESTO</a></li>
+               <li><a href="">PERGUNTAS FREQUENTES</a></li>
+               <h3>FORMULÁRIOS</h3>
+               <li><a href="">SUGESTÃO DE PROJETO</a></li>
+               <li><a href="">CADASTRO</a></li>
+               <h3>PROJETOS</h3>
+               <li><a href="">PROJETOS EM ANDAMENTO</a></li>
+               <li><a href="">PROJETOS FINALIZADOS</a></li>
+          </ul>
      </div>
 </div>
 
 
 <script>
      // adicionar classe active
-     console.log('aakakakakkakaakak')
      const pathe = window.location.pathname;
      let pagex = pathe.split("/").pop();
      pagex = pagex === "" ? "index.html" : pagex; //caso path vazio assume-se index.html
